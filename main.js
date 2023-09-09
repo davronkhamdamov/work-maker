@@ -82,8 +82,8 @@ function drowSecond(text) {
 }
 
 download.addEventListener('click', () => {
-    drowFirst(text1.value)
-    drowSecond(text2.value);
+    drowFirst(text2.value)
+    drowSecond(text1.value);
     const ImageURL = canvas.toDataURL('image/jpeg');
     const btn = document.getElementById("downloadLink")
     btn.href = ImageURL;
